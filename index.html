@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#210d19">
+  <meta name="description" content="A little love note, made just for you.">
+  <title>Sorry Baby ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="hearts-layer" id="heartsLayer" aria-hidden="true"></div>
+
+  <main class="page-shell">
+    <div class="topline"><span class="tiny-heart">♥</span><span>A LITTLE NOTE FROM ME TO YOU</span><span class="tiny-heart">♥</span></div>
+    <section class="experience-card" aria-live="polite" aria-atomic="true">
+      <div class="ornament" aria-hidden="true"><span></span>♥<span></span></div>
+      <div class="step-indicator" id="stepIndicator">A LITTLE SOMETHING FOR YOU</div>
+
+      <section class="screen active" data-screen="0">
+        <div class="eyebrow">FOR MY FAVOURITE PERSON</div>
+        <h1>Sorry <em>Baby.</em></h1>
+        <p class="lead">Can I have a little moment of your time?</p>
+        <div class="illustration" aria-hidden="true">💌</div>
+        <button class="primary-btn" data-next="1">Open my heart <span>♥</span></button>
+      </section>
+
+      <section class="screen" data-screen="1" hidden>
+        <div class="illustration small" aria-hidden="true">🥺</div>
+        <div class="eyebrow">FIRST, I OWE YOU THIS</div>
+        <h2>I'm truly <em>sorry,</em> baby.</h2>
+        <p class="message">Sorry for not being with you on my birthday. I know I should have been there with you, and I wish I had made that time together happen. You deserved to feel loved and included. ❤️</p>
+        <p class="signature">You matter to me. Always.</p>
+        <button class="primary-btn" data-next="2">Can I make it up to you? <span>♥</span></button>
+      </section>
+
+      <section class="screen" data-screen="2" hidden>
+        <div class="illustration small" aria-hidden="true">🌹</div>
+        <div class="eyebrow">A LITTLE DATE, JUST US</div>
+        <h2>Shall we go out for a <em>dinner</em> today?</h2>
+        <p class="message">Good food, your company, and some much-needed us time. What do you say?</p>
+        <div class="button-row">
+          <button class="primary-btn" data-next="3">Yes, let's go! <span>♥</span></button>
+          <button class="secondary-btn" id="dinnerNo">No</button>
+        </div>
+      </section>
+
+      <section class="screen" data-screen="3" hidden>
+        <div class="illustration" aria-hidden="true">🥰</div>
+        <div class="eyebrow">THAT'S MY GIRL!</div>
+        <h2>Yay! I am ready for the <em>dinner.</em></h2>
+        <p class="message">Let's go make a lovely little memory together. I can't wait to spend the evening with you.</p>
+        <button class="primary-btn" data-next="4">Let's go <span>♥</span></button>
+      </section>
+
+      <section class="screen" data-screen="4" hidden>
+        <div class="illustration" aria-hidden="true">💗</div>
+        <div class="eyebrow">MY FAVOURITE COMPANY</div>
+        <h2>Thanks, baby, for <em>coming.</em></h2>
+        <p class="message">Every moment with you means more than you know. I'm lucky to have you by my side.</p>
+        <button class="primary-btn" data-next="5">Love You <span>♥</span></button>
+      </section>
+
+      <section class="screen" data-screen="5" hidden>
+        <div class="illustration small" aria-hidden="true">🙏🏻</div>
+        <div class="eyebrow">ONE MORE LITTLE PLAN</div>
+        <h2>Shall we go to <em>temple</em> tomorrow morning?</h2>
+        <p class="message">A peaceful morning, a little prayer, and starting the day together. ❤️</p>
+        <div class="button-row">
+          <button class="primary-btn" data-next="6">Yes, of course! <span>♥</span></button>
+          <button class="secondary-btn" data-next="7">No</button>
+        </div>
+      </section>
+
+      <section class="screen" data-screen="6" hidden>
+        <div class="illustration" aria-hidden="true">❤️</div>
+        <div class="eyebrow">JUST YOU AND ME</div>
+        <h2>Love you, <em>baby.</em></h2>
+        <p class="message">Tomorrow morning it is. Looking forward to another little memory with you.</p>
+        <div class="final-note">Always yours <span>♥</span></div>
+      </section>
+
+      <section class="screen" data-screen="7" hidden>
+        <div class="illustration" aria-hidden="true">🥹💕</div>
+        <div class="eyebrow">PLEADING WITH LOVE</div>
+        <h2>Babyyyyy…</h2>
+        <p class="message">We shall go to temple tomorrow morning. Be ready. Love you. ❤️</p>
+        <div class="final-note">I'll be waiting, my love <span>♥</span></div>
+      </section>
+      <div class="card-footer"><span>MADE WITH ALL MY LOVE</span><span>♥</span></div>
+    </section>
+    <p class="bottom-note">A small reminder that you are loved, today and every day.</p>
+  </main>
+
+  <div class="modal-backdrop" id="playfulModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalText">
+      <div class="modal-heart" aria-hidden="true">💘</div>
+      <h2 id="modalTitle">Nice try, baby!</h2>
+      <p id="modalText">You don't have the option to say No. Please click Yes. 😉</p>
+      <button class="primary-btn" id="modalOkay">Okay, okay! <span>♥</span></button>
+    </div>
+  </div>
+</body>
+</html>
